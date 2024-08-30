@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>renderJSX</title>
-
-</head>
-<body>
-  <div id="root"></div>
-
-  <!-- React and ReactDOM from CDN -->
-  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-  
-  <!-- Babel Standalone from CDN -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-  <!-- JSX and JavaScript code -->
-  <script type="text/babel">
-    // Function to get query parameters from the URL
+<!doctypehtml><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>renderJSX</title><div id=root></div><script src=https://unpkg.com/react@17/umd/react.development.js crossorigin></script><script src=https://unpkg.com/react-dom@17/umd/react-dom.development.js crossorigin></script><script src=https://unpkg.com/@babel/standalone/babel.min.js></script><script type=text/babel>// Function to get query parameters from the URL
     function getQueryParameter(name) {
       const urlParams = new URLSearchParams(window.location.search);
       return urlParams.get(name);
@@ -41,8 +21,4 @@
       ReactDOM.render(<App />, document.getElementById('root'));
     } else {
       document.getElementById('root').innerText = 'No JSX code provided.';
-    }
-  </script>
-
-</body>
-</html>
+    }</script>
