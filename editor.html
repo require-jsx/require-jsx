@@ -32,7 +32,7 @@
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = 'code.js';
+                a.download = 'code.jsx';
                 a.click();
                 URL.revokeObjectURL(url);
             });
@@ -100,6 +100,6 @@
             function runCode() {
                 const code = editor.getValue();
                 const encodedCode = encodeURIComponent(code);
-                window.open(`render.html?jsx=${encodedCode}`);
+                window.open(`renderJSX.html?jsx=${encodedCode}`);
             }
         });</script>
